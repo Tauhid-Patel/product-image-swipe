@@ -1,0 +1,47 @@
+<html>
+<head>
+ <title>Product Image Swap</title>
+ <link rel="stylesheet" href="style.css">
+ <script src="app.js" defer></script>
+</head>
+<body>
+    <!-- A container for holding every component inside it -->
+    <div class="container">
+        <!-- Product image which is available by default -->
+        <div class="preview">
+            <img src="./images/image-1.png" id="imagebox" alt="image">
+        </div>
+        <!-- Secondary Thumbnails to view different images -->
+        <div class="slider">
+            <div class="product">
+               <img src="./images/image-1.png" alt="image" onclick="clickme(this)">
+               <img src="./images/image-2.jpg" alt="image" onclick="clickme(this)">
+               <img src="./images/image-3.jpg" alt="image" onclick="clickme(this)">
+               <img src="./images/image-4.jpg" alt="image" onclick="clickme(this)">
+            </div>
+        </div>
+        <!-- Details of the specified product like its name, price, packs, etc.. -->
+        <div class="details">
+            <h1>LEAGUE OF LEGENDS</h1>
+            <p class="card-pack">5 card in packs</p>
+            <h3>$ 49.00</h3>
+            <button>BUY PACKS</button>
+            <p class="total-count">35,561 Total</p>
+            <div class="divider"></div>
+        </div>
+        <!-- Explanation on what the pack is really about -->
+        <div class="description">
+            <h2>PACK DETAILS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed esse alias in impedit dolores tava<br>
+            Aliquam reprehenderit pariatur dolores expedita! Assumenda, amet corrupti natus para baei<br>
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed esse alias in impedit dolores tava<br>
+            Aliquam reprehenderit pariatur dolores expedita! Assumenda, amet corrupti natus para baei<br>
+            Aliquam reprehenderit pariatur dolores expedita! Assumenda, amet corrupti natus para baei<br>
+            dolor sit amet consectetur adipisicing
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

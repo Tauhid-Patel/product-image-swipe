@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+/* Container to hold every other component */
+.container {
+    margin: 4em;
+    height: 80%;
+    background-color: #262626;
+}
+/* Primary Thumbnail image which is displayed by default */
+.preview img {
+    position: relative;
+    top: 18px;
+    left: 35px;
+    height: 16.5em;
+    width: 31.2em;
+    border: 2px solid gold;
+}
+/* Secodnary Thumbnails product images */
+.slider{
+    margin: 2.1em 1em 1em 2.4em;
+    width: 40%;
+    height: 42%;
+}
+
+.product {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product img{
+    width: 15em;
+    height: 6.5em;
+    padding: .6em .5em .1em .2em;
+    cursor: pointer;
+    opacity: 0.5;
+}
+/* Hover effect set to 1(brightest) so that the primary image is properly visible */
+.product img:hover{
+    opacity: 1;
+}
+/* Product details styling */
+.details {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    color: white;
+}
+.details h1 {
+    color: gold;
+}
+.details .card-pack {
+    padding-top: 1em;
+    font-size: .8em;
+}
+.details h3 {
+    padding-top: .7em;
+    font-size: 2em;
+}
+.details button {
+    cursor: pointer;
+    margin-top: 1.5em;
+    padding: 1em 2em;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-weight: 700;
+}
+.details .total-count {
+    padding-top: 1.5em;
+}
+/* Thin line which divides details and description about the product */
+.divider {
+    position: relative;
+    top: 1.8em;
+    width: 35em;
+    height: .01em;
+    background-color: #ccc;
+}
+/* Explanation styling */
+.description {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    color: white;
+}
+.description p {
+    line-height: 1.5;
+    font-size: .85em;
+    padding-top: 1em;
+    color: #999999;
+}
